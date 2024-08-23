@@ -904,10 +904,10 @@ require('lazy').setup({
     version = '*',
     config = function(_, opts)
       require('toggleterm').setup(opts)
-      vim.keymap.set('n', '<C-`>', function()
+      vim.keymap.set('n', '<C-x>', function()
         vim.cmd 'ToggleTerm'
       end)
-      vim.keymap.set('t', '<C-`>', function()
+      vim.keymap.set('t', '<C-x>', function()
         vim.cmd 'ToggleTerm'
       end)
     end,
